@@ -1,0 +1,8 @@
+apt-get update && apt-get install -y cups cups-pdf
+
+systemctl enable --now cups
+
+cupsctl --share-printers --remote-any
+
+
+Далее если принтер имеется, на ПК пользователя ищем в настройках принтера свой принтер. В поиск следует вводить домен сервера и провести тестовую печать
