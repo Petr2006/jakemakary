@@ -1,0 +1,23 @@
+Что настраиваем	Путь к файлу (на какой машине)
+
+Logrotate	/etc/logrotate.d/hq-br-logs (HQ-SRV)
+
+Rsyslog (конфиг)	/etc/rsyslog.d/hq-srv.conf (HQ-SRV)
+
+Prometheus	/etc/prometheus/prometheus.yml (HQ-SRV)
+
+Nginx reverse proxy	/etc/nginx/sites-enabled/reverse-proxy.conf (ISP)
+
+Nginx .htpasswd	/etc/nginx/.htpasswd (ISP)
+
+Samba (конфиг)	/etc/samba/smb.conf (BR-SRV)
+
+Ansible inventory	/etc/ansible/hosts (BR-SRV)
+
+CUPS	конфиг не нужен, только установка и веб-интерфейс
+
+
+cat > /путь/к/файлу << 'EOF'
+# сюда вставляете ваш большой текст
+# строчка за строчкой
+EOF
